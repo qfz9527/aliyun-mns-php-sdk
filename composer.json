@@ -1,10 +1,14 @@
 {
   "name": "qfz9527/aliyun-mns-php-sdk",
-  "description": "PHP SDK of MNS(Message Service) for composer",
+  "description": "Aliyun MNS SDK for PHP",
   "keywords": [
     "aliyun",
-    "mns"
+    "MNS",
+    "sdk"
   ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "homepage": "https://www.aliyun.com/product/mns",
   "authors": [
     {
       "name": "Alibaba",
