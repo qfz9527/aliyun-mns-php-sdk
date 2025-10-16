@@ -34,6 +34,7 @@ class Constants
     const MESSAGE_BODY = "MessageBody";
     const PRIORITY = "Priority";
     const MESSAGE_ID = "MessageId";
+    const MESSAGE_GROUP_ID = "MessageGroupId";
     const MESSAGE_BODY_MD5 = "MessageBodyMD5";
     const ENQUEUE_TIME = "EnqueueTime";
     const NEXT_VISIBLE_TIME = "NextVisibleTime";

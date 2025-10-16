@@ -10,6 +10,7 @@ trait MessagePropertiesForSend
     protected $messageBody;
     protected $delaySeconds;
     protected $priority;
+    protected $messageGroupId;
 
     public function getMessageBody()
     {
@@ -41,6 +42,16 @@ trait MessagePropertiesForSend
         $this->priority = $priority;
     }
 
+    public function getMessageGroupId()
+    {
+        return $this->messageGroupId;
+    }
+
+    public function setMessageGroupId($messageGroupId)
+    {
+        $this->messageGroupId = $messageGroupId;
+    }
+
     public function writeMessagePropertiesForSendXML(\XMLWriter $xmlWriter, $base64)
     {
         if ($this->messageBody != NULL)
@@ -58,6 +69,10 @@ trait MessagePropertiesForSend
         if ($this->priority != NULL)
         {
             $xmlWriter->writeElement(Constants::PRIORITY, $this->priority);
+        }
+        if ($this->messageGroupId != NULL)
+        {
+            $xmlWriter->writeElement(Constants::MESSAGE_GROUP_ID, $this->messageGroupId);
         }
         if ($this->userProperties != NULL) {
             $xmlWriter->startElement(Constants::USER_PROPERTIES_TAG);

@@ -1,5 +1,5 @@
 {
-    "name": "aliyun/aliyun-mns-php-sdk",
+    "name": "qfz927/aliyun-mns-php-sdk",
     "version": "1.4.0",
     "type": "library",
     "description": "Aliyun Message and Notification Service SDK for PHP, PHP>=5.5.0",
